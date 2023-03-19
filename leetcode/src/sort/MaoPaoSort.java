@@ -18,7 +18,7 @@ public class MaoPaoSort {
         solution.maoPao(arr);
     }
 
-    private static class Solution {
+    static class Solution {
         public void maoPao(int[] arr) {
             for (int i = 0; i < arr.length - 1; i++) {
                 boolean isBreak = false;
