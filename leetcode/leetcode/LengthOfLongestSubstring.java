@@ -29,6 +29,31 @@ package leetcode;
  * @Date: 2023/3/19 20:29
  */
 
+import java.util.HashMap;
+
 public class LengthOfLongestSubstring {
-    
+    public static void main(String[] args) {
+        LengthOfLongestSubstring mode = new LengthOfLongestSubstring();
+        String s = "abcabcbb";
+        System.out.println(mode.lengthOfLongestSubstring(s));
+    }
+
+    public int lengthOfLongestSubstring(String s) {
+        if (s.length() == 0) {
+            return 0;
+        }
+        int left = 0;
+        int max = 0;
+        HashMap<Character, Integer> cache = new HashMap<>();
+        for (int i = 0; i < s.length(); i++) {
+            char charAt = s.charAt(i);
+            if (cache.containsKey(charAt)) {
+                left = Math.max(left, cache.get(charAt) + 1);
+            }
+            max = Math.max(max, i - left + 1);
+            cache.put(charAt, i);
+        }
+        return max;
+    }
+
 }
