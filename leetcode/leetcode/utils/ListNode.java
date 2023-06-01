@@ -1,7 +1,7 @@
-package leetcode.reverselistclass;
+package leetcode.utils;
 
 public class ListNode {
-    int val;
+    public int val;
     public ListNode next;
 
     ListNode() {

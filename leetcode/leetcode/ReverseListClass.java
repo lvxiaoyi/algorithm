@@ -1,4 +1,6 @@
-package leetcode.reverselistclass;
+package leetcode;
+
+import leetcode.utils.ListNode;
 
 /**
  * @Author: lvxiaoyi

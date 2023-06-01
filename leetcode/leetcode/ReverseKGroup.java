@@ -1,8 +1,6 @@
-package leetcode.reversekgroup;
+package leetcode;
 
-import leetcode.reverselistclass.ListNode;
-
-import javax.swing.event.ListDataEvent;
+import leetcode.utils.ListNode;
 
 public class ReverseKGroup {
     public static void main(String[] args) {
