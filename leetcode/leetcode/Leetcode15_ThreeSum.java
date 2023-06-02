@@ -4,11 +4,11 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ThreeSum {
+public class Leetcode15_ThreeSum {
     public static void main(String[] args) {
         int[] nums = {-1, 0, 1, 2, -1, -4, -1, -1};
 
-        ThreeSum threeSum = new ThreeSum();
+        Leetcode15_ThreeSum threeSum = new Leetcode15_ThreeSum();
         List<List<Integer>> lists = threeSum.threeSum(nums);
         System.out.println(lists);
 

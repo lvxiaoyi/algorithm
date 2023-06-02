@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class YangHuiTriangle {
+public class Leetcode118_YangHuiTriangle {
     public static void main(String[] args) {
         int num = 5;
         try {

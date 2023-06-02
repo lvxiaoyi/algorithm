@@ -3,14 +3,14 @@ package leetcode.lrucache;
 import java.util.HashMap;
 import java.util.Map;
 
-class LRUCache {
+class Leetcode146_LRUCache {
 
     private Map<Integer, DLinkNode> cache = new HashMap<Integer, DLinkNode>();
     int size = 0;
     int capacity = 0;
     private DLinkNode head, tail;
 
-    public LRUCache(int capacity) {
+    public Leetcode146_LRUCache(int capacity) {
         this.capacity = capacity;
         head = new DLinkNode();
         tail = new DLinkNode();

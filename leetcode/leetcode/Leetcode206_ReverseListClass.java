@@ -9,7 +9,7 @@ import leetcode.utils.ListNode;
  * @DateTime: 2023/5/29 16:50
  */
 
-public class ReverseListClass {
+public class Leetcode206_ReverseListClass {
     public static void main(String[] args) {
         ListNode listNode1 = new ListNode(1);
         ListNode listNode2 = new ListNode(2);
@@ -22,7 +22,7 @@ public class ReverseListClass {
         listNode4.next = listNode5;
 
 
-        ReverseListClass reverseListClass = new ReverseListClass();
+        Leetcode206_ReverseListClass reverseListClass = new Leetcode206_ReverseListClass();
         ListNode listNode = reverseListClass.reverseList(listNode1);
         System.out.println(listNode);
 

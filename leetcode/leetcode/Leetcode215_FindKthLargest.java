@@ -1,10 +1,10 @@
 package leetcode;
 
-public class FindKthLargest {
+public class Leetcode215_FindKthLargest {
     public static void main(String[] args) {
         int[] arr = {3,2,1,5,6,4};
-        FindKthLargest findKthLargest = new FindKthLargest();
-        int kthLargest = findKthLargest.findKthLargest(arr, 2);
+        Leetcode215_FindKthLargest leetcode215FindKthLargest = new Leetcode215_FindKthLargest();
+        int kthLargest = leetcode215FindKthLargest.findKthLargest(arr, 2);
         System.out.println(kthLargest);
     }
 

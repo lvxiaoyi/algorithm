@@ -3,10 +3,10 @@ package leetcode;
 import java.util.Arrays;
 import java.util.Random;
 
-public class SortArray {
+public class Leetcode912_SortArray {
     public static void main(String[] args) {
         int[] nums = {5, 1, 1, 2, 0, 0};
-        SortArray sortArray = new SortArray();
+        Leetcode912_SortArray sortArray = new Leetcode912_SortArray();
         int[] ints = sortArray.sortArray(nums);
         System.out.println(Arrays.toString(ints));
 

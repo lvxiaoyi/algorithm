@@ -2,7 +2,7 @@ package leetcode;
 
 import leetcode.utils.ListNode;
 
-public class MergeTwoLists {
+public class Leetcode21_MergeTwoLists {
     public static void main(String[] args) {
         ListNode listNode1 = new ListNode(1);
         ListNode listNode2 = new ListNode(2);
@@ -16,7 +16,7 @@ public class MergeTwoLists {
         listNode4.next = listNode5;
         listNode5.next = listNode6;
 
-        MergeTwoLists mergeTwoLists = new MergeTwoLists();
+        Leetcode21_MergeTwoLists mergeTwoLists = new Leetcode21_MergeTwoLists();
         ListNode listNode = mergeTwoLists.mergeTwoLists(listNode1, listNode4);
         System.out.println(listNode);
     }

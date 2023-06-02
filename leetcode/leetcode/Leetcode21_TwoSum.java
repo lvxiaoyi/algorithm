@@ -2,10 +2,10 @@ package leetcode;
 
 import java.util.Arrays;
 
-public class TwoSum {
+public class Leetcode21_TwoSum {
     public static void main(String[] args) {
         int[] nums = {2, 7, 11, 15};
-        TwoSum twoSum = new TwoSum();
+        Leetcode21_TwoSum twoSum = new Leetcode21_TwoSum();
         int[] ints = twoSum.twoSum(nums, 9);
         System.out.println(Arrays.toString(ints));
     }

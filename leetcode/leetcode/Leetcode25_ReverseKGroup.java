@@ -2,7 +2,7 @@ package leetcode;
 
 import leetcode.utils.ListNode;
 
-public class ReverseKGroup {
+public class Leetcode25_ReverseKGroup {
     public static void main(String[] args) {
         ListNode listNode1 = new ListNode(1);
         ListNode listNode2 = new ListNode(2);
@@ -14,7 +14,7 @@ public class ReverseKGroup {
         listNode3.next = listNode4;
         listNode4.next = listNode5;
 
-        ReverseKGroup reverseKGroup = new ReverseKGroup();
+        Leetcode25_ReverseKGroup reverseKGroup = new Leetcode25_ReverseKGroup();
         ListNode listNode = reverseKGroup.reverseKGroup(listNode1, 2);
         System.out.println(listNode);
     }

@@ -31,9 +31,9 @@ package leetcode;
 
 import java.util.HashMap;
 
-public class LengthOfLongestSubstring {
+public class Leetcode3_LengthOfLongestSubstring {
     public static void main(String[] args) {
-        LengthOfLongestSubstring mode = new LengthOfLongestSubstring();
+        Leetcode3_LengthOfLongestSubstring mode = new Leetcode3_LengthOfLongestSubstring();
         String s = "abcabcbb";
         System.out.println(mode.lengthOfLongestSubstring(s));
     }

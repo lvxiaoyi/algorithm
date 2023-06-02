@@ -1,9 +1,9 @@
 package leetcode;
 
-public class MaxSubArray {
+public class Leetcode53_MaxSubArray {
     public static void main(String[] args) {
         int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
-        MaxSubArray maxSubArray = new MaxSubArray();
+        Leetcode53_MaxSubArray maxSubArray = new Leetcode53_MaxSubArray();
         int i = maxSubArray.maxSubArray(nums);
         System.out.println(i);
     }
