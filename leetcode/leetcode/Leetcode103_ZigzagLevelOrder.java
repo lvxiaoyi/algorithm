@@ -81,4 +81,51 @@ public class Leetcode103_ZigzagLevelOrder {
         return result;
     }
 
+
+    /**
+     * @Author: lvxiaoyi
+     * @Description:
+     *
+     * 这种是通过改变插入字符串的位置，实现最终的结果
+     *
+     * @DateTime: 2023/12/21 23:50
+     */
+
+    public List<List<Integer>> zigzagLevelOrder2(TreeNode root) {
+        List<List<Integer>> result = new LinkedList<>();
+        if (root == null) return new LinkedList<>();
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        boolean isReverse = false;
+
+        while (!queue.isEmpty()) {
+            List<Integer> level = new LinkedList<>();
+            int size = queue.size();
+
+            for (int i = 0; i < size; i++) {
+                TreeNode node = queue.poll();
+
+                if (isReverse) {
+                    level.add(0, node.val); // 在头部插入，实现从右到左顺序
+                } else {
+                    level.add(node.val); // 在尾部追加，实现从左到右顺序
+                }
+
+                if (node.left != null) {
+                    queue.offer(node.left);
+                }
+
+                if (node.right != null) {
+                    queue.offer(node.right);
+                }
+            }
+
+            result.add(level);
+            isReverse = !isReverse;
+        }
+
+        return result;
+    }
+
 }
